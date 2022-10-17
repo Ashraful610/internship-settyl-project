@@ -5,7 +5,7 @@ const Employees = () => {
    const[employees , setEmployees] = useState([])
 
    useEffect(()=>{
-    fetch('data.json')
+    fetch('http://localhost:5000/employees')
     .then(res => res.json())
     .then(data => setEmployees(data))
    },[])
@@ -16,7 +16,7 @@ const Employees = () => {
              </h2>
              <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5 p-5">
                   {
-                    employees?.map(employee => <Employee key={employee.id} employee={employee}/>)
+                    employees?.map(employee => <Employee key={employee._id} employee_id={employee._id}/>)
                   }              
              </div>
         </div>

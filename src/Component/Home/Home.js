@@ -5,7 +5,7 @@ import Employees from './Employees/Employees';
 const Home = () => {
     return (
         <div className='bg-black'>
-           {/* <Banner /> */}
+           <Banner />
            <Employees/>
         </div>
     );
