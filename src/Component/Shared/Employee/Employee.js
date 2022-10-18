@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import img from '../../../images/tiger.jpg'
+import toast from 'react-hot-toast';
 
 const Employee = ({employee_id}) => {
      const [employee , setEmployee] = useState({})
@@ -30,6 +30,9 @@ const Employee = ({employee_id}) => {
       .then(result => {
           console.log(result.modifiedCount)
           if(result.modifiedCount > 0){
+            toast.success('Successfully update employee information',{
+              duration:3000 , position:'top-right'
+            })
             setUpdate(!update)
           }
       });

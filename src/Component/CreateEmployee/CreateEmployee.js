@@ -20,9 +20,9 @@ const CreateEmployee = () => {
             .then(res => res.json())
             .then(result => {
                 if(result.insertedId){
-                    navigate('/home')
                     toast.success('Successfully create a new employee',
                     {duration: 3000,position:'top-right'})
+                    navigate('/home')
                 }
             })
         }

@@ -6,6 +6,7 @@ import Home from './Component/Home/Home';
 import Navbar from './Component/Shared/Navbar/Navbar';
 import SignIn from './Component/SignIn/SignIn';
 import  { Toaster } from 'react-hot-toast';
+import SignUp from './Component/Shared/SignUp/SignUp';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
               <Route path='/' element={<Home></Home>}/>
               <Route path='/home' element={<Home></Home>}/>
               <Route path='/dashBoard' element={<DashBoard></DashBoard>}/>
-              <Route path='/signInSignUp' element={<SignIn></SignIn>}/>
+              <Route path='/signIn' element={<SignIn></SignIn>}/>
+              <Route path='/signup' element={<SignUp></SignUp>}/>
               <Route path='/createEmployee' element={<CreateEmployee></CreateEmployee>}/>
         </Routes>
         <Toaster></Toaster>
