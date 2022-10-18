@@ -1,18 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Banner.css'
 
 const Banner = () => {
     return (
      <div className='w-full min-h-[500px] md:max-h-[550px] h-fit flex md:flex-row flex-col '>
+        {/* ---------- text div ------------- */}
        <div className='md:w-3/5 sm:order-first order-last md:p-10 p-6 flex items-center'>
           <div className='space-y-5'>
               <h2 className='xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl text-2xl font-serif text-semibold text-white uppercase'>
-                    Welcome to <span className='bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500'>Settyl</span> API
+                    Welcome to <span className='bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500'>Settyl</span> API
               </h2>
               <p className='text-white font-serif xl:text-lg text-base  xl:px-2 lg:pr-2'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident explicabo labore rem quae quibusdam aliquam perferendis veritatis optio adipisci!
               </p>
-              <input type="text" placeholder='search...' className='px-5 xl:py-1 lg:py-[2px] w-2/4 min-w-[200px] rounded-full placeholder:text-slate-500 font-serif placeholder:font-semibold lg:text-base  outline-none border-2 border-sky-500 bg-white/90'  />
+                 <button className='navLinkStyle'>
+                  <Link to='/createEmployee'>create api</Link>
+                 </button>
           </div>
        </div>
        {/* ---------- img div ----------- */}

@@ -47,7 +47,7 @@ const Employee = ({employee_id}) => {
        <h2>Employee age : {employee_age}</h2>
        {!update && 
         <div className="flex justify-center">
-         <button onClick={()=>setUpdate(!update)} className='hover:scale-1 bg-purple-600 px-10 py-1 rounded-full mt-5 font-semibold transition-all duration-300 ease-in-out  hover:scale-125'>
+         <button onClick={()=>setUpdate(!update)} className='hover:scale-1 bg-gradient-to-r from-green-600 to-blue-600 px-10 py-1 rounded-full mt-5 font-semibold transition-all duration-300 ease-in-out  hover:scale-110 uppercase'>
                Update
          </button>  
         </div>

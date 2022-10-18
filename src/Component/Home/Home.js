@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className='bg-black'>
            <Banner />
-           {/* <Employees/> */}
+           <Employees/>
         </div>
     );
 };
