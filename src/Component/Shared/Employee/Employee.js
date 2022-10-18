@@ -36,9 +36,11 @@ const Employee = ({employee_id}) => {
     }
     return (
   <div className='p-5 bg-white/20 hover:bg-white/30'>
+    {/* --------img div --------- */}
     <div className='flex justify-center'>
-       <img src={img} className='rounded-full xl:w-[100px] lg:w-[90px] w-[80px] xl:h-[100px] lg:h-[90px] h-[80px]' alt="" />
+       <img src='https://scontent.fdac80-1.fna.fbcdn.net/v/t39.30808-1/305616377_101465389390529_2009171116005346258_n.png?stp=c106.0.320.320a_dst-png_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=c6021c&_nc_eui2=AeGSZngBjBFTysSo6AAxaay5W7Ckba-ZGMBbsKRtr5kYwFYw-yt95zPD6zoB6lMrZNEhf0wBITyJ3_bLCRK9TIK5&_nc_ohc=kIJpkLY05O0AX_rQAY1&_nc_ht=scontent.fdac80-1.fna&oh=00_AT-lqddFm_5Wx3lt4EKl9xMU8n8gt8yX3hnLwN5ldZSMjQ&oe=6353F8CF' className='rounded-full xl:w-[100px] lg:w-[90px] w-[80px] xl:h-[100px] lg:h-[90px] h-[80px]' alt="" />
     </div>
+    {/* -------------- employee details ------------ */}
     <div className='text-white '>
        <h2> name : {employee_name}</h2>
        <h2>Employee salary : ${ employee_salary}</h2>
@@ -50,6 +52,7 @@ const Employee = ({employee_id}) => {
          </button>  
         </div>
       }
+      {/* ------------ update form ------------- */}
       {
         update &&
          <form onSubmit={handleUpdate} className=''>

@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import {getAuth} from 'react-firebase-hooks'
+import {getAuth} from 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: "AIzaSyCDHPonUv2SY4qD77-lnzjAR2D0VAMSf4Q",

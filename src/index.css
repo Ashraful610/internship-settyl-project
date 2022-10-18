@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navLinkStyle{
+    @apply text-white font-semibold font-serif mx-2 text-base px-5 py-1  flex justify-center ring-2 ring-sky-900 hover:ring-0 bg-gradient-to-r hover:from-green-700 hover:to-blue-700 uppercase
+}
