@@ -16,9 +16,9 @@ const Banner = () => {
           </div>
        </div>
        {/* ---------- img div ----------- */}
-       <div className='md:w-2/5 sm:order-last order-first  lg:p-16 md:p-10 p-6 flex items-center justify-center'>
+       <div className='md:w-2/5 sm:order-last order-first p-5 flex items-center justify-center'>
            <img src='https://scontent.fdac80-1.fna.fbcdn.net/v/t39.30808-1/305616377_101465389390529_2009171116005346258_n.png?stp=c106.0.320.320a_dst-png_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=c6021c&_nc_eui2=AeGSZngBjBFTysSo6AAxaay5W7Ckba-ZGMBbsKRtr5kYwFYw-yt95zPD6zoB6lMrZNEhf0wBITyJ3_bLCRK9TIK5&_nc_ohc=kIJpkLY05O0AX_rQAY1&_nc_ht=scontent.fdac80-1.fna&oh=00_AT-lqddFm_5Wx3lt4EKl9xMU8n8gt8yX3hnLwN5ldZSMjQ&oe=6353F8CF'
-            className='xl:w-[400px] xl:h-[400px] lg:w-[370px] lg:h-[370px] sm:w-[350px] sm:h-[350px] w-[250px] h-[250px]  rounded-full' alt="" />
+            className='xl:w-[400px] xl:h-[400px] lg:w-[350px] lg:h-[350px] sm:w-[320px] sm:h-[320px] w-[220px] h-[220px]  rounded-full ' alt="" />
        </div>
      </div>
     );
