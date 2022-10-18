@@ -5,7 +5,7 @@ const Employees = () => {
    const[employees , setEmployees] = useState([])
 
    useEffect(()=>{
-    fetch('http://localhost:5000/employees')
+    fetch('https://pacific-taiga-93991.herokuapp.com/employees')
     .then(res => res.json())
     .then(data => setEmployees(data))
    },[employees]);

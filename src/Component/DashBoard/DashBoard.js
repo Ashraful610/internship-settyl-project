@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { ResponsiveContainer,AreaChart,Area, XAxis, YAxis, Tooltip } from 'recharts';
+import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const DashBoard = () => {
     const[employees , setEmployees] = useState([])
 
    //  load employees
     useEffect(()=>{
-     fetch('http://localhost:5000/employees')
+     fetch('https://pacific-taiga-93991.herokuapp.com/employees')
      .then(res => res.json())
      .then(data => setEmployees(data))
     },[employees]);

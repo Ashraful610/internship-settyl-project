@@ -7,7 +7,7 @@ const Employee = ({employee_id}) => {
      const [update , setUpdate]= useState(false);
 
     useEffect(()=>{
-      fetch(`http://localhost:5000/employee/${employee_id}`)
+      fetch(`https://pacific-taiga-93991.herokuapp.com/employee/${employee_id}`)
       .then(res => res.json())
       .then(result => setEmployee(result))
     },[employee])
@@ -19,7 +19,7 @@ const Employee = ({employee_id}) => {
         const age = event.target.age.value || employee_age
         const newEmployee = {employee_name: name, employee_salary: salary, employee_age: age}
      
-        fetch(`http://localhost:5000/employee/${_id}`, {
+        fetch(`https://pacific-taiga-93991.herokuapp.com/employee/${_id}`, {
         method: 'PUT',
         body: JSON.stringify(newEmployee),
         headers: {

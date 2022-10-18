@@ -1,6 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const CreateEmployee = () => {
     const navigate = useNavigate()
@@ -12,7 +12,7 @@ const CreateEmployee = () => {
         const employeeAge = event.target.age.value
         if(employeeName && employeeSalary && employeeAge){
             const employee = {employee_name: employeeName, employee_salary: employeeSalary, employee_age: employeeAge}
-            fetch('http://localhost:5000/employee',{
+            fetch('https://pacific-taiga-93991.herokuapp.com/employee',{
                 method:'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(employee)
