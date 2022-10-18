@@ -9,7 +9,7 @@ const Banner = () => {
        <div className='md:w-3/5 sm:order-first order-last md:p-10 p-6 flex items-center'>
           <div className='space-y-5'>
               <h2 className='xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl text-2xl font-serif text-semibold text-white uppercase'>
-                    Welcome to <span className='bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500'>Settyl</span> API
+                    Welcome to<span className='some_text_style'>Settyl</span> API
               </h2>
               <p className='text-white font-serif xl:text-lg text-base  xl:px-2 lg:pr-2'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident explicabo labore rem quae quibusdam aliquam perferendis veritatis optio adipisci!

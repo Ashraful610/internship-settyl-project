@@ -5,6 +5,7 @@ import DashBoard from './Component/DashBoard/DashBoard';
 import Home from './Component/Home/Home';
 import Navbar from './Component/Shared/Navbar/Navbar';
 import SignIn from './Component/SignIn/SignIn';
+import  { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <Route path='/signInSignUp' element={<SignIn></SignIn>}/>
               <Route path='/createEmployee' element={<CreateEmployee></CreateEmployee>}/>
         </Routes>
+        <Toaster></Toaster>
     </div>
   );
 }
