@@ -95,11 +95,12 @@ const Navbar = () => {
         </ul>
         </div>
       </div>
+      {/* ----------- website logo ----------- */}
       <div className='lg:navbar-start navbar-end xl:mr-[600px] lg:mr-[350px]'>
             {/* -------------- website name --------------- */}
          <div>
            <Link to='/home' className='text-white text-3xl font-serif font-semibold'>
-              <img src="https://settyl.com/wp-content/uploads/2022/04/settyl.logo_.svg" className='min-w-[200px]' alt="" />
+              <img src="https://settyl.com/wp-content/uploads/2022/04/settyl.logo_.svg" className='sm:min-w-[200px] min-w-[180px]' alt="" />
            </Link>
          </div>
       </div>
