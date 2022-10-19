@@ -8,7 +8,7 @@ const Employees = () => {
     fetch('https://pacific-taiga-93991.herokuapp.com/employees')
     .then(res => res.json())
     .then(data => setEmployees(data))
-   },[employees]);
+   },[]);
     return (
         <div className='w-full min-h-screen '>
              <h2 className='md:text-5xl sm:text-4xl text-3xl text-center font-serif text-semibold p-5 text-white uppercase'>
